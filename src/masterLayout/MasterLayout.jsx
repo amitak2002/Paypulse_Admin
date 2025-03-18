@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import ThemeToggleButton from "../helper/ThemeToggleButton";
+//import PayPulseLogo from '../../public/assets/images/PaypulseLogo.png'
 
 const MasterLayout = ({ children }) => {
   let [sidebarActive, seSidebarActive] = useState(false);
@@ -107,19 +108,19 @@ const MasterLayout = ({ children }) => {
         <div>
           <Link to='/' className='sidebar-logo'>
             <img
-              src='assets/images/lklogo.png'
+              src='/assets/images/PaypulseLogo.png'
               alt='site logo'
-              className='light-logo'
+              className='light-logo rounded-md'
             />
             <img
-              src='assets/images/lklogo.png'
+              src='/assets/images/PaypulseLogo.png'
               alt='site logo'
-              className='dark-logo'
+              className='dark-logo rounded-md'
             />
             <img
-              src='assets/images/lklogo.png'
+              src='/assets/images/PaypulseLogo.png'
               alt='site logo'
-              className='logo-icon'
+              className='logo-icon ronded-md'
             />
           </Link>
         </div>
@@ -207,7 +208,7 @@ const MasterLayout = ({ children }) => {
             </li>
 
             {/* Components Dropdown */}
-            <li className='dropdown'>
+            {/* <li className='dropdown'>
               <Link to='#'>
                 <Icon
                   icon='solar:document-text-outline'
@@ -448,10 +449,10 @@ const MasterLayout = ({ children }) => {
                   </NavLink>
                 </li>
               </ul>
-            </li>
+            </li> */}
 
             {/* Forms Dropdown */}
-            <li className='dropdown'>
+            {/* <li className='dropdown'>
               <Link to='#'>
                 <Icon icon='heroicons:document' className='menu-icon' />
                 <span>Forms</span>
@@ -502,13 +503,13 @@ const MasterLayout = ({ children }) => {
                   </NavLink>
                 </li>
               </ul>
-            </li>
+            </li> */}
 
            
 
             
 
-            <li>
+            {/* <li>
               <NavLink
                 to='/widgets'
                 className={(navData) => (navData.isActive ? "active-page" : "")}
@@ -517,7 +518,7 @@ const MasterLayout = ({ children }) => {
                 <span>Widgets</span>
               </NavLink>
             </li>
-
+ */}
             <li>
               <NavLink
                 to='*'
@@ -531,7 +532,7 @@ const MasterLayout = ({ children }) => {
               </NavLink>
             </li>
 
-            {/* Users Dropdown */}
+            {/* Users Dropdown
             <li className='dropdown'>
               <Link to='#'>
                 <Icon
@@ -565,14 +566,14 @@ const MasterLayout = ({ children }) => {
                 </li>
                 
               </ul>
-            </li>
+            </li> */}
 
 
 
 
 
 
-             {/* Users Dropdown */}
+             {/* Users Dropdown
              <li className='dropdown'>
               <Link to='#'>
                 <Icon
@@ -606,9 +607,9 @@ const MasterLayout = ({ children }) => {
                 </li>
                 
               </ul>
-            </li>
+            </li> */}
             
-            <li className='dropdown'>
+            {/* <li className='dropdown'>
               <Link to='#'>
                 <Icon
                   icon='flowbite:users-group-outline'
@@ -651,7 +652,7 @@ const MasterLayout = ({ children }) => {
                   </NavLink>
                 </li>
               </ul>
-            </li>
+            </li> */}
 
             <li>
               <NavLink
@@ -689,7 +690,7 @@ const MasterLayout = ({ children }) => {
                 <span>Newsletter</span>
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink
                 to='2'
                 className={(navData) => (navData.isActive ? "active-page" : "")}
@@ -700,7 +701,7 @@ const MasterLayout = ({ children }) => {
                 />
                 <span>Location</span>
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink
                 to='3'
@@ -789,15 +790,6 @@ const MasterLayout = ({ children }) => {
             
 
             {/* Blog */}
-
-            
-            
-            
-           
-            
-            
-           
-
 
           </ul>
         </div>
